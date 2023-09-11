@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="assets/icon.png">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="assets/icon.png" alt="icon" height="32px" width="32px">
+            <h1>unit converter</h1>
+        </header>
+        <div class="inputBox">
+            <h1>convert</h1>
+            <div id="firstLine">
+                <div id="selectBlock">
+                    <select name="conversionUnit" id="conversionUnit">
+                        <option value="miles">km → miles</option>
+                        <option value="kilometers">miles → km</option>
+                        <option value="meters">feet → meters</option>
+                        <option value="feet">meters → feet</option>
+                        <option value="inches">centimeters → inches</option>
+                        <option value="centimeters">inches → centimeters</option>
+                    </select>
+                    <input type="image" src="assets/icon-white.png" height="24px" width="24px" id="switchUnit">
+                </div>
+                <div id="inputBlock">
+                    <input type="text" id="input">
+                    <p id="inputUnit">kilometers</p>
+                </div>
+            </div>
+            <div id="secondLine">
+                <input type="image" src="assets/heart.png" height="24px" width="24px" id="save">
+                <div id="resultBlock">
+                    <p id="result">0</p>
+                    <p id="resultUnit">miles</p>
+                </div>
+            </div>
+        </div>
+        <div class="saved">
+            <h1>saved</h1>
+            <div class="savedList"></div>
+        </div>
+        <footer>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="dist/app.js"></script>
+    </body>
+</html>
